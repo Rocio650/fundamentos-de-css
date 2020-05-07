@@ -155,15 +155,20 @@ ul.menu li a {
     border-right: 1px solid #7c7c7c;
     padding: 15px;
 }
- 
-ul.menu li:last-child a{
-    border-right: 0px;
+
+ul.menu li:first-child a{
+    font-weight: 600;
 }
 
 ul.menu li a:hover {
     color: white;
     background-color: var(--color-primary);
 }    
+ 
+ul.menu li:last-child a{
+    border-right: 0px;
+}
+
 /*--------------------- END MENU -------------------*/
    
    
