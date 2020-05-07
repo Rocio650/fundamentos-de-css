@@ -1,41 +1,139 @@
-html {
-    --font-primary: Arial;
-    --color-primary: #9AAE04;
-    font-size: 15px;
+*{
+    box-sizing: border-box;
+    margin: 0;
 }
+   
+  :root{
+      --wrapper-width: 80%;
+    /*--------------------- COLORS ---------------------*/
+      --color-primary: #9aae04; /*VERDE*/
+      --border-color: #777;    /*GRIS OSCURO*/
+    /*--------------------- END COLORS ---------------------*/
+    /*--------------------- FONTS ---------------------*/
+      --font-primary: 'verdana';
+      --base_font_size: 1rem;
+      --base_titles_size: 2rem;
+      --big_titles_size: 3rem;
+    /*--------------------- END FONTS ---------------------*/
+    /*--------------------- SPACING ---------------------*/
+      --base_spacing-size: 1rem;  /*Margin y Padding*/
+    /*--------------------- END SPACING ---------------------*/
+   
+  }
+ 
+
+
+/*--------------------- GENERAL ---------------------*/
+
+a {
+    text-decoration: none;
+}
+h2 {
+    font-size: var(--base_titles_size);
+}  
+
+/*--------------------- END GENERAL ---------------------*/
+
+
+
+
+
+
+/*--------------------- BODY BASE -------------------*/
 
 body {
     padding: 0;
     margin: 0 auto;   
     width: 100%;
     font-family: var(--font-primary);
-}
+    font-size: var(--base_font_size);
+}   
+
+/*--------------------- END BODY BASE -------------------*/
 
 
-a {
-    text-decoration: none;
-}
 
+
+/*--------------------- HEADER ---------------------*/
 header {
     width: 100%;
     background-color: lightgrey;
-    padding-bottom: 2px;
-    padding-top: 10px;
+    padding-bottom: 1%;
+    padding-top: 2%;
     margin-bottom: 10px;
 }
 
 header h1{
-    margin-left: 190px;  
+    margin-left: 10%;
+    font-size: var(--big_titles_size); 
 }
+/*--------------------- END HEADER ---------------------*/
 
-main {
-    width: 70%;
+
+
+  
+ 
+   
+/*--------------------- WRAPPER ---------------------*/
+#wrapper {
+    width: var(--wrapper-width);
     margin: 0 auto;  
+}   
+
+/*--------------------- END WRAPPER ---------------------*/
+
+
+/*--------------------- CONTAINER -------------------*/
+.container {
+    height: 330px;    
+    padding-top: 20px;
+    border-top: 1px dashed var(--color-primary);
+    border-bottom: 1px dashed var(--color-primary); 
+}
+/*--------------------- END CONTAINER ---------------------*/
+
+
+
+
+/*--------------------- SECTION -------------------*/
+section {
+    float: left; 
+    width: 80%;
 }
 
-/* menú */
+section h2 {
+    margin-top: 0px;
+}
+section p {
+    width: 92%;
+    padding: 15px;
+    background-color: lightgrey;
+    font-size: 15px;
+    margin-bottom: 1%;
+}
+/*--------------------- END SECTION -------------------*/
+
+
+
+/*--------------------- ASIDE -------------------*/
+aside {
+    background-color: lightgrey;
+    width: 20%;
+    height: 295px;
+    float: left;
+    text-align: center;
+}
+aside img {    
+    width: 90%;
+    margin-top: 10px;
+}
+/*--------------------- END ASIDE -------------------*/
+
+
+
+/*--------------------- MENU -------------------*/
 ul.menu {
-    margin-left: 190px;
+    margin-left: 10%;
     margin-right: 125px;
     max-width: max-content;
     background-color: white;
@@ -65,55 +163,18 @@ ul.menu li:last-child a{
 ul.menu li a:hover {
     color: white;
     background-color: var(--color-primary);
-} 
-
-/* container */
-.container {
-    height: 312px;    
-    padding-top: 20px;
-    border-top: 1px dashed var(--color-primary);
-    border-bottom: 1px dashed var(--color-primary); 
-}
-
-
-/* section */
-section {
-    float: left; 
-    width: 80%;
-}
-
-section h2 {
-    margin-top: 0px;
-}
-section p {
-    width: 92%;
-    padding: 15px;
-    background-color: lightgrey;
-    font-size: 15px;
-}
-
-
-
-/* aside */
-aside {
-    background-color: lightgrey;
-    width: 20%;
-    height: 295px;
-    float: left;
-    text-align: center;
-}
-aside img {    
-    width: 90%;
-    margin-top: 10px;
-}
-
-
-
-/* formulario */
+}    
+/*--------------------- END MENU -------------------*/
+   
+   
+  
+   
+   
+/*--------------------- FORM -------------------*/
 form {
     width: 100%;
     float: left;
-    margin: 0 auto;
+    margin-top: 2%;
     padding-bottom: 20px;
     margin-bottom: 30px;
     border-bottom: 1px dashed var(--color-primary);
@@ -141,7 +202,7 @@ form .form-group, form .form-group2  {
 
 .formItem {
     display: inline-block;
-    margin-right: 3%;
+    margin-right: 1%;
     width: 30%;
 }
 
@@ -150,12 +211,16 @@ label {
     margin-bottom: 5px;
 }
 
+label#dni {
+    margin-right: 4%;
+}
+
 .formItem input[type="text"], input[type="tel"] {
     width: 100%;
 } 
 
 .form-group2 .formItem:first-child {
-    margin-right: 3%;
+    margin-right: 1%;
     display: inline-flex;
     position: relative;
     top: -23px;
@@ -185,7 +250,7 @@ input[type="reset"]:hover, input[type="submit"]:hover {
 .formItem.hermanos {
     position: relative;
     margin-right: 4%;
-    top: -80px;
+    top: -68px;
 }
 
 .formItem.deportes {
@@ -196,11 +261,16 @@ input[type="reset"]:hover, input[type="submit"]:hover {
 ol {
     margin-top: 2px;
 }
+ 
+/*--------------------- END FORM -------------------*/
+   
+   
 
 
 
-/* tabla */
 
+
+/*--------------------- TABLE -------------------*/
 table {
     border: 1.5px solid #333333;
     border-collapse: collapse;
@@ -225,3 +295,13 @@ th {
     padding-top: 5px;
     padding: 15px;
  }
+ /*--------------------- END TABLE -------------------*/
+
+
+
+
+
+
+
+
+

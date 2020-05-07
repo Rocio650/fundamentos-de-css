@@ -22,7 +22,7 @@
             </nav>
         </header>
 
-        <main>
+        <div id="wrapper">
 
             <div class="container">
                 <section>
@@ -56,9 +56,9 @@
 
                     <div class="form-group2">
                         <div class="formItem">
-                            <!-- radiobutton explícito -->
-                            <input type="radio" id="dni" name="documento" value="dni">
-                            <label for="dni">DNI</label>
+                            <label for="dni" id="dni">
+                                <input type="radio" id="dni" name="documento" value="dni"> DNI
+                            </label>
                             <!-- radiobutton implícito -->
                             <label for="nie">
                                 <input name="documento" id="nie" type="radio" value="nie" /> NIE
@@ -119,6 +119,6 @@
                 </tr>
             </table>
 
-        </main>
+        </div>
     </body>
 </html>
