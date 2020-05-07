@@ -25,17 +25,17 @@ header {
 }
 
 header h1{
-    margin-left: 125px;  
+    margin-left: 190px;  
 }
 
 main {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;  
 }
 
 /* menú */
 ul.menu {
-    margin-left: 125px;
+    margin-left: 190px;
     margin-right: 125px;
     max-width: max-content;
     background-color: white;
